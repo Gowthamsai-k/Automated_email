@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 
-yag = yagmail.SMTP('gowthamk0519@gmail.com', oauth2_file=os.path.expanduser('creds'))
+yag = yagmail.SMTP('youremail@gmail.com', oauth2_file=os.path.expanduser('creds'))
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
